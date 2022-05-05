@@ -1,24 +1,25 @@
 const postcss = require('postcss')
 const cssnano = require('cssnano')
 const autoprefixer = require('autoprefixer')
+const fs = require('fs')
 
-// Wrapped in a function so we can use async/await
-const minifyCss = async () => {
-  // This CSS might be imported from a file, or anywhere else
-  const css = `
-    * {
-      font-family: system-ui;
-    }
-  `
+const cssFile = __dirname + '/../public/styles.css'
+const minCssFile = __dirname + '/../public/styles.min.css'
 
-  // We pass in an array of the plugins we want to use: `cssnano` and `autoprefixer`
-  const output = await postcss([cssnano, autoprefixer])
-    .process(css)
+fs.readFile(cssFile, 'utf-8', (err, data) => {
+  // console.log('Before:')
+  // console.log(data)
 
-  // The `css` property of `output` is the minified CSS as a string
-  const minifiedCss = output.css
+  postcss([cssnano, autoprefixer])
+    .process(data)
+    .then((data) => {
+      // console.log('\r\nAfter:')
+      // console.log(data.css)
 
-  console.log(minifiedCss);
-}
-
-minifyCss()
+      // Wegschrijven naar het bestand
+      fs.writeFile(minCssFile, data.css, (err) => {
+        if (err) console.log(err)
+        console.log('Successfully written minified css to ' + minCssFile + '.')
+      })
+    })
+})
