@@ -6,7 +6,13 @@ const fs = require('fs')
 const cssFile = __dirname + '/../public/styles.css'
 const minCssFile = __dirname + '/../public/styles.min.css'
 
-fs.readFile(cssFile, 'utf-8', (err, data) => {
+const headerFile = __dirname + '/../public/header.css'
+const minHeaderFile = __dirname + '/../public/header.min.css'
+
+const detailFile = __dirname + '/../public/detail.css'
+const minDetailFile = __dirname + '/../public/detail.min.css'
+
+fs.readFile(cssFile, 'utf-8', (err, data) => { 
   // console.log('Before:')
   // console.log(data)
 
@@ -20,6 +26,42 @@ fs.readFile(cssFile, 'utf-8', (err, data) => {
       fs.writeFile(minCssFile, data.css, (err) => {
         if (err) console.log(err)
         console.log('Successfully written minified css to ' + minCssFile + '.')
+      })
+    })
+})
+
+// Header css //
+
+fs.readFile(headerFile,'utf-8', (err, data) => {
+
+    postcss([cssnano, autoprefixer])
+    .process(data)
+    .then((data) => {
+      // console.log('\r\nAfter:')
+      console.log(data.css)
+
+      // Wegschrijven naar het bestand
+      fs.writeFile(minHeaderFile, data.css, (err) => {
+        if (err) console.log(err)
+        console.log('Successfully written minified css to ' + minHeaderFile + '.')
+      })
+    })
+})
+
+// Detail CSS//
+
+fs.readFile(detailFile,'utf-8', (err, data) => {
+
+    postcss([cssnano, autoprefixer])
+    .process(data)
+    .then((data) => {
+      // console.log('\r\nAfter:')
+      console.log(data.css)
+
+      // Wegschrijven naar het bestand
+      fs.writeFile(minDetailFile, data.css, (err) => {
+        if (err) console.log(err)
+        console.log('Successfully written minified css to ' + minDetailFile + '.')
       })
     })
 })
