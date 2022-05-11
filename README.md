@@ -9,7 +9,15 @@ Beschrijf de website die je hebt geoptimaliseerd, voeg screenshots van de perfor
 
 ### Performance audit: 
 
+Voor minifying, caching en compressie:
+
 <img width="700" alt="Schermafbeelding 2022-04-29 om 12 39 23" src="https://user-images.githubusercontent.com/90189750/165929518-dd50e579-530b-4592-9471-efc3b15971db.png">
+
+Na optimization:
+
+
+<img width="700" alt="Schermafbeelding 2022-05-11 om 11 09 25" src="https://user-images.githubusercontent.com/90189750/167813950-1c886ec0-b84f-4005-8596-da99ecbeceb8.png">
+
 
 ### Resources:
 <img width="463" alt="Schermafbeelding 2022-04-29 om 12 14 54" src="https://user-images.githubusercontent.com/90189750/165929977-b5c625b3-ae64-4741-9891-c6909f27d8ad.png">
