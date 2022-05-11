@@ -17,7 +17,14 @@ Beschrijf de website die je hebt geoptimaliseerd, voeg screenshots van de perfor
 Door de pagina te gaan optimaliseren hoop ik het aantal kb aan resources te verminderen waardoor de pagina sneller word.
 
 ### Minifying
-Beschrijf welke bestanden je _minified_ hebt en waarom je dat gedaan hebt. Als je er bewust voor kiest bepaalde bestanden niet te minify-en dan beschrijf je ook waarom je dat niet gedaan hebt.
+<img width="700" alt="Schermafbeelding 2022-05-11 om 10 41 41" src="https://user-images.githubusercontent.com/90189750/167807762-996ebd25-d4ef-4cf0-9b2b-8f35b4bb5b31.png">
+
+zoals hier te zien hebben de bestanden styles.css en header.css een grootte van 266 B en 265 B. Dit kan vele malen kleiner gemaakt worden zodat dit ook sneller ingeladen word. Ik heb daarom besloten om deze bestanden te minifyen door gebruik van PostCss, Cssnano en autoprefixer. 
+
+<img width="790" alt="Schermafbeelding 2022-05-11 om 10 45 25" src="https://user-images.githubusercontent.com/90189750/167808765-51b38daf-48e6-442c-b3b4-76a0ece7e7c2.png">
+
+
+
 
 ### Code splitting
 Beschrijf welke front-end javascript bestanden je gesplit hebt en waarom je dat gedaan hebt. Schrijf vanuit het idee van daadwerkelijk gebruikte code per pagina.
