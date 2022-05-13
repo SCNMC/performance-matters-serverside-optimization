@@ -75,8 +75,21 @@
 
         <!-- About Us Image Wrapper -->
         <div style="position: relative">
-            <img src="/images/team-1 2.jpeg" alt="Foto met zeven personen, kijkend naar een laptop.">
+            <picture>
+                <picture>
+                    <source
+                    sizes="(max-width: 1024px) 100vw, 1024px"
+                    srcset="
+                    images/team-1-1024.avif 1024w,
+                    images/team-1-861.avif 861w,
+                    images/team-1-200.avif 200w,"
+                    
+                    type="image/avif"
+            />
             <span></span>
+            
+            <img src="/images/team-1.jpeg" alt="Photo">
+            </picture>
         </div>
     </section>
 
@@ -137,7 +150,7 @@
 
             <!-- Person Kevin -->
             <div class="kevin">
-                <img src="assets/images/man 1.jpeg" alt="foto van een zakenman">
+                <img src="/images/Man1.1.jpeg" alt="foto van een zakenman">
                 <div class="name_kevin">
                     <p>Kevin</p>
                 </div>
@@ -150,7 +163,7 @@
 
             <!-- Person Hans -->
             <div class="Hans">
-                <img src="assets/images/man2.jpeg" alt=" foto van een zakenman">
+                <img src="/images/man2.jpeg" alt=" foto van een zakenman">
                 <div class="name_hans">
                     <p>Hans</p>
                 </div>
@@ -163,7 +176,7 @@
 
             <!-- Person Lisa -->
             <div class="Lisa">
-                <img src="assets/images/woman2.jpeg" alt="foto van een zakenvrouw">
+                <img src="/images/woman2.jpeg" alt="foto van een zakenvrouw">
                 <div class="name_lisa">
                     <p>Lisa</p>
                 </div>
@@ -176,7 +189,7 @@
 
             <!-- Person Eva -->
             <div class="Eva">
-                <img src="assets/images/woman2.jpeg" alt="foto van een zakenvrouw">
+                <img src="/images/woman2.jpeg" alt="foto van een zakenvrouw">
                 <div class="name_lisa">
                     <p>Eva</p>
                 </div>
