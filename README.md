@@ -48,7 +48,7 @@ Ik heb geen gebruik gemaakt van client side javascript dus het splitten van code
 Beschrijf welke caching opties je gekozen hebt en waarom je dat op deze manier doet.
 
 ### Compressie
-Beschrijf hoe je compressie hebt ingezet en waarom je die keuze hebt gemaakt.
+Ik heb gebruik gemaakt van de npm compression package. Compression verminderd de hoeveelheid data dat word geleverd aan de gebruiker.
 
 ## Bronnen
 Beschrijf de door jou gebruikte bronnen om bovenstaande stappen uit te voeren.
