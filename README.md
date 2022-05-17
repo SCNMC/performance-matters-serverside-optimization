@@ -25,7 +25,7 @@ Na optimization:
 
 Door de pagina te gaan optimaliseren hoop ik het aantal kb aan resources te verminderen waardoor de pagina sneller word. Momenteel heeft de pagina 728kb aan resources. 
 
-Na optimazation:
+Na optimization:
 
 <img width="713" alt="Schermafbeelding 2022-05-17 om 22 52 13" src="https://user-images.githubusercontent.com/90189750/168908054-e5e40da2-81a0-4586-9ef5-36617e57d527.png">
 
