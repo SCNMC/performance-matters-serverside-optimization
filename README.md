@@ -35,7 +35,7 @@ zoals hier te zien hebben de bestanden styles.css en header.css een grootte van 
 
 
 ### Code splitting
-Beschrijf welke front-end javascript bestanden je gesplit hebt en waarom je dat gedaan hebt. Schrijf vanuit het idee van daadwerkelijk gebruikte code per pagina.
+Ik heb geen gebruik gemaakt van client side javascript dus het splitten van code was niet nodig.
 
 ### Caching
 Beschrijf welke caching opties je gekozen hebt en waarom je dat op deze manier doet.
