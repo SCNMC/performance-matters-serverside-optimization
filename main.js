@@ -12,11 +12,11 @@ app.use(express.static('public'))
 app.set('view engine', 'ejs')
 app.set('views', './views')
 app.use(compression())
-n
+
 // Stel caching headers in
 app.use(function (req, res, next) {
   if (req.method == 'GET') {
-    res.set('Cache-control', 'public, max-age=300')
+    res.set('Cache-control', 'public, max-age=86400')
   } else {
     res.set('Cache-control', `no-store`)
   }
