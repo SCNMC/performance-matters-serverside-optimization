@@ -45,7 +45,7 @@ zoals hier te zien hebben de bestanden styles.css en header.css een grootte van 
 Ik heb geen gebruik gemaakt van client side javascript dus het splitten van code was niet nodig.
 
 ### Caching
-Ik heb de caching gezet op 1 dag. Reden hiervoor omdat ik niet het idee heb dat er veel nieuwe dingen toegevoegd gaan worden aan de pagina.
+De caching heb gezet op 1 dag. Reden hiervoor omdat ik niet het idee heb dat er veel nieuwe dingen toegevoegd gaan worden aan de pagina.
 
 ### Compressie
 Ik heb gebruik gemaakt van de npm compression package. Compression verminderd de hoeveelheid data dat word geleverd aan de gebruiker.
