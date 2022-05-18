@@ -15,14 +15,21 @@ Voor minifying, caching en compressie:
 
 Na optimization:
 
+<img width="713" alt="Schermafbeelding 2022-05-17 om 22 53 28" src="https://user-images.githubusercontent.com/90189750/168908250-7cbb0d84-c03c-4bcf-b701-71059c129627.png">
 
-<img width="700" alt="Schermafbeelding 2022-05-11 om 11 09 25" src="https://user-images.githubusercontent.com/90189750/167813950-1c886ec0-b84f-4005-8596-da99ecbeceb8.png">
 
 
 ### Resources:
-<img width="463" alt="Schermafbeelding 2022-04-29 om 12 14 54" src="https://user-images.githubusercontent.com/90189750/165929977-b5c625b3-ae64-4741-9891-c6909f27d8ad.png">
 
-Door de pagina te gaan optimaliseren hoop ik het aantal kb aan resources te verminderen waardoor de pagina sneller word.
+<img width="713" alt="Schermafbeelding 2022-05-17 om 22 47 16" src="https://user-images.githubusercontent.com/90189750/168907260-729bf576-43e3-4d13-ae8e-912b8ec9c5bd.png">
+
+Door de pagina te gaan optimaliseren hoop ik het aantal kb aan resources te verminderen waardoor de pagina sneller word. Momenteel heeft de pagina 728kb aan resources. 
+
+Na optimization:
+
+<img width="713" alt="Schermafbeelding 2022-05-17 om 22 52 13" src="https://user-images.githubusercontent.com/90189750/168908054-e5e40da2-81a0-4586-9ef5-36617e57d527.png">
+
+
 
 ### Minifying
 <img width="700" alt="Schermafbeelding 2022-05-11 om 10 41 41" src="https://user-images.githubusercontent.com/90189750/167807762-996ebd25-d4ef-4cf0-9b2b-8f35b4bb5b31.png">
@@ -35,13 +42,13 @@ zoals hier te zien hebben de bestanden styles.css en header.css een grootte van 
 
 
 ### Code splitting
-Beschrijf welke front-end javascript bestanden je gesplit hebt en waarom je dat gedaan hebt. Schrijf vanuit het idee van daadwerkelijk gebruikte code per pagina.
+Ik heb geen gebruik gemaakt van client side javascript dus het splitten van code was niet nodig.
 
 ### Caching
 Beschrijf welke caching opties je gekozen hebt en waarom je dat op deze manier doet.
 
 ### Compressie
-Beschrijf hoe je compressie hebt ingezet en waarom je die keuze hebt gemaakt.
+Ik heb gebruik gemaakt van de npm compression package. Compression verminderd de hoeveelheid data dat word geleverd aan de gebruiker.
 
 ## Bronnen
 Beschrijf de door jou gebruikte bronnen om bovenstaande stappen uit te voeren.
